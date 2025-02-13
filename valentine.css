@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff5f5;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+}
+.card {
+    position: relative;
+}
+.message {
+    color: red;
+    font-size: 3rem;
+}
+.heart {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    font-size: 4rem;
+    color: red;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    from {
+        transform: translateX(-50%) scale(1);
+    }
+    to {
+        transform: translateX(-50%) scale(1.2);
+    }
+}
+.button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+}

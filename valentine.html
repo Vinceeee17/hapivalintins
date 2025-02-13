@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine’s</title>
+    <link rel="stylesheet" href="valentine.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff5f5;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .card {
+            position: relative;
+        }
+        .message {
+            color: red;
+            font-size: 3rem;
+        }
+        .heart {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            font-size: 4rem;
+            color: red;
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                transform: translateX(-50%) scale(1);
+            }
+            to {
+                transform: translateX(-50%) scale(1.2);
+            }
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="message">Happy <span class="heart">♥</span> Valentine’s rieriee</div>
+        <button class="button" onclick="showLove()">Tap for Love</button>
+    </div>
+    <script>
+        function showLove() {
+            alert('ang cutiee ni vinceee 💕');
+        }
+    </script>
+</body>
+</html>
